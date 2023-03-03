@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@mixin redButton {
+    display: block;
+    width: 150px;
+    background-color: #e92b2b;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: relative;
+    // background-image: url(assets/images/buttonBackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    background-position: -110px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    z-index: 999;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+    background-color: #fff;
+
+}
+.sidebarwidth {
+    width: 0;
+    display: none;
+    transition: all 0.3s;
+}
+
+.sideBarInner {
+    overflow-x: hidden;
+
+    .LogoImage {
+        padding-bottom: 20px;
+    }
+
+    .sidebar-nav {
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #aab7cf transparent;
+
+        .nav-item {
+            margin-bottom: 5px;
+
+            .nav-link {
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                font-weight: 600;
+                color: black;
+                transition: 0.3;
+                padding: 10px 15px;
+                border-radius: 4px;
+                background-color: #e92b2bce;
+
+                span {
+                    // color: #e92b2b;
+                    color: white;
+                    font-size: 17px;
+                }
+
+                .sideIcon {
+                    font-size: 23px;
+                    margin-right: 30px;
+                    color: white;
+
+                }
+
+                .ms-auto {
+                    font-size: 12px;
+                    margin-right: 10px;
+                    color: white;
+                }
+            }
+
+            .collapsed {
+                background-color: white;
+
+                span {
+                    color: #aa97b0;
+                }
+
+                .sideIcon {
+                    color: #aa97b0;
+                }
+            }
+        }
+
+        .nav-content {
+            list-style: none;
+
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 600;
+                color: #012970;
+                padding: 10px 0 10px 10px;
+                transition: all 0.3s;
+
+                i {
+                    font-size: 6px;
+                    margin-right: 8px;
+                    line-height: 0;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+
+        .li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+
+    }
+}
+
+
+
+.AppFull {
+    background-color: #e8ebf046;
+    margin-left: 0;
+    transition: all 0.3s;
+}
+
+.App {
+    background-color: #e8ebf046;
+    margin-left: 350px;
+    transition: all 0.3s;
+
+
+}
+
+header {
+    .headerInner {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navRight {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .notificationDropDown {
+
+                .dropdown-toggle {
+                    background-color: #e92b2b11;
+                    border: none;
+                    color: #e92b2b;
+                    font-size: 23px;
+                    position: relative;
+
+                    .notificationShow {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .profileDropDown {
+                .dropdown-toggle {
+                    background-color: #e92b2b00;
+                    border: none;
+                    color: #e92b2b;
+                    font-size: 23px;
+                    position: relative;
+
+                    img {
+                        border-radius: 10px;
+                        width: 50px;
+                        object-fit: cover;
+                        height: 50px;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .aboutDoctor {
+                text-align: right;
+
+                .doctorName {
+                    color: #e92b2b;
+                    font-weight: 600;
+                }
+
+                .doctorSpeciality {
+                    color: #aa97b0;
+                }
+            }
+        }
+
+        .menuButton {
+            background-color: #aa97b000;
+            color: #e92b2b;
+
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    // .sidebar{
+    //     left: -400px;
+    // }
+    .sidebar {
+        // width: 93px;
+
+        // .sideBarInner {
+        //     .sidebar-nav {
+        //         .nav-item {
+        //             .nav-content {
+        //                 position: absolute !important;
+                        
+        //             }
+        //         }
+        //     }
+
+          
+        // }
+
+    }
+
+    .App {
+        // margin-left: 93px;
+        margin-left: 0;
+    }
+    .sidebar{
+        width: 0;
+        display: none;
+        transition: all 0.3s;
+    }
+    .sidebarwidth{
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 350px;
+        z-index: 999;
+        transition: all 0.3s;
+        padding: 20px;
+        overflow-x: hidden;
+        box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+        background-color: #fff;
+    }
+}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {
+    .sidebar {
+        // width: 65px;
+
+        .sideBarInner {
+            .sidebar-nav {
+                .nav-item {
+                    .nav-link {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .App {
+        // margin-left: 65px;
+    }
+
+    header {
+        .headerInner {
+            .navRight {
+                .aboutDoctor {
+                    display: none;
+                }
+            }
+        }
+    }
+}
