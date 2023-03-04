@@ -1,26 +1,23 @@
-import React,{useEffect, useState} from 'react'
+import React,{useContext, useEffect, useState} from 'react'
 import logoImg from '../../assets/images/Logo.png'
+import {SidebarContext} from '../../App'
 
 export const Sidebar = (props) => {
 
-
-    const [sideBarWidth, setSideBarWidth] = useState(false);
-    useEffect(()=>{
-        setSideBarWidth(props.sideBarWidth)
-        console.log(sideBarWidth ,"true")
-    })
-    // const closeButton = () =>{
-    //     setSideBarWidth(true)
-    //     console.log(sideBarWidth ,"false")
-    // }
+   
+    const { sideBar, setSideBar } = useContext(SidebarContext )
+    
+    const closeButton = () =>{
+        setSideBar(!sideBar)
+    }
 
     return (
         <>
-            <aside id="sidebar" className={sideBarWidth ? 'sidebarwidth' : 'sidebar'}>
+            <aside id="sidebar" className={sideBar ? 'sidebarwidth' : 'sidebar'}>
                 <div className="sideBarInner">
-                    {/* <div className='aSideCloseButton'>
+                    <div className='aSideCloseButton'>
                         <button onClick={closeButton}>X</button>
-                    </div> */}
+                    </div>
                     <div className="LogoImage">
                         <img src={logoImg} alt="" />
                     </div>
@@ -28,7 +25,7 @@ export const Sidebar = (props) => {
                     <ul className="sidebar-nav" id="sidebar-nav">
                         <li className="nav-item">
                             <a className="nav-link  collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-                            <i class="bi bi-person-lines-fill sideIcon"/><span>Doctors</span><i className="bi bi-chevron-down ms-auto"></i>
+                            <i className="bi bi-person-lines-fill sideIcon"/><span>Doctors</span><i className="bi bi-chevron-down ms-auto"></i>
                             </a>
                             <ul id="charts-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                                 <li>
@@ -40,7 +37,7 @@ export const Sidebar = (props) => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link  collapsed" data-bs-target="#charts-nav1" data-bs-toggle="collapse" href="#">
-                            <i class="bi bi-clipboard-pulse sideIcon"/><span>Labs</span><i className="bi bi-chevron-down ms-auto"></i>
+                            <i className="bi bi-clipboard-pulse sideIcon"/><span>Labs</span><i className="bi bi-chevron-down ms-auto"></i>
                             </a>
                             <ul id="charts-nav1" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                                 <li>
@@ -53,7 +50,7 @@ export const Sidebar = (props) => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link  collapsed" data-bs-target="#charts-nav2" data-bs-toggle="collapse" href="#">
-                            <i class="bi bi-capsule sideIcon"></i><span>Pharmacy</span><i className="bi bi-chevron-down ms-auto"></i>
+                            <i className="bi bi-capsule sideIcon"></i><span>Pharmacy</span><i className="bi bi-chevron-down ms-auto"></i>
                             </a>
                             <ul id="charts-nav2" className="nav-content collapse " data-bs-parent="#sidebar-nav" >
                                 <li>
@@ -70,7 +67,7 @@ export const Sidebar = (props) => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link  collapsed" data-bs-target="#charts-nav3" data-bs-toggle="collapse" href="#">
-                            <i class="bi bi-folder2-open sideIcon"/><span>Reports</span><i className="bi bi-chevron-down ms-auto"></i>
+                            <i className="bi bi-folder2-open sideIcon"/><span>Reports</span><i className="bi bi-chevron-down ms-auto"></i>
                             </a>
                             <ul id="charts-nav3" className="nav-content collapse " data-bs-parent="#sidebar-nav" >
                                 <li>

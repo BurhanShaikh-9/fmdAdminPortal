@@ -1,18 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ProfileImg from '../../assets/images/profile-img.jpg'
+import {SidebarContext} from '../../App'
 
 export const Header = (props) => {
 
-    const [sideBarShow, setSideBarShow] = useState(false);
-    const sideMenuHide = () => {
-        setSideBarShow(!sideBarShow);
-        props.getAsideValue(sideBarShow);
-    }
+    const { sideBar, setSideBar } = useContext(SidebarContext )
+
     return (
         <>
             <header>
                 <div className="headerInner">
-                    <button className='menuButton' onClick={sideMenuHide}><i className="bi bi-list"></i></button>
+                    <button className='menuButton' onClick={() => setSideBar(!sideBar)}><i className="bi bi-list"></i></button>
                     <div className="navRight">
                         <div className="dropdown notificationDropDown">
                             <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

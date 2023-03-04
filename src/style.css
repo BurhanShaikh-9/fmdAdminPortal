@@ -61,6 +61,16 @@ a {
 
 .sideBarInner {
   overflow-x: hidden;
+  position: relative;
+}
+.sideBarInner .aSideCloseButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.sideBarInner .aSideCloseButton button {
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 18px;
 }
 .sideBarInner .LogoImage {
   padding-bottom: 20px;
@@ -204,6 +214,7 @@ header .headerInner .navRight .aboutDoctor .doctorSpeciality {
 header .headerInner .menuButton {
   background-color: rgba(170, 151, 176, 0);
   color: #e92b2b;
+  outline: none;
 }
 header .headerInner .menuButton i {
   font-size: 30px;

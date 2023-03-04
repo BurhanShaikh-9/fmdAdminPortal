@@ -3,13 +3,13 @@ import { Header } from './Component/header'
 
 export const Layout = (props) => {
 
-  const [sideBar, setsideBar] = useState();
-  const getSideBarPos = (value) => {
-    setsideBar(!value);
-    props.getAsideValue(sideBar)
-  }
+  // const [sideBar, setsideBar] = useState();
+  // const getSideBarPos = (value) => {
+  //   setsideBar(!value);
+  //   props.getAsideValue(sideBar)
+  // }
 
   return (
-    <div> <Header getAsideValue={getSideBarPos}/> </div>
+    <div> <Header /> </div>
   )
 }
