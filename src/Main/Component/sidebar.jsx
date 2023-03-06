@@ -16,7 +16,7 @@ export const Sidebar = (props) => {
             <aside id="sidebar" className={sideBar ? 'sidebarwidth' : 'sidebar'}>
                 <div className="sideBarInner">
                     <div className='aSideCloseButton'>
-                        <button onClick={closeButton}>X</button>
+                        <button onClick={closeButton}><i className="bi bi-x"></i></button>
                     </div>
                     <div className="LogoImage">
                         <img src={logoImg} alt="" />
@@ -31,6 +31,12 @@ export const Sidebar = (props) => {
                                 <li>
                                     <a href="pastOrder.php" className="navLinkA ">
                                         <i className="bi bi-circle"></i><span>Add Doctor</span>
+                                    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="restaurantCategories.php" className="navLinkC ">
+                                    <i className="bi bi-circle"></i><span>Manage Doctors</span>
                                     </a>
                                 </li>
                             </ul>
@@ -43,9 +49,14 @@ export const Sidebar = (props) => {
                                 <li>
                                     <a href="restaurantCategories.php" className="navLinkB ">
                                         <i className="bi bi-circle"></i><span>Add Lab</span>
+                                        
                                     </a>
                                 </li>
-                             
+                                <li>
+                                    <a href="restaurantCategories.php" className="navLinkC ">
+                                    <i className="bi bi-circle"></i><span>Manage Labs</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -56,11 +67,12 @@ export const Sidebar = (props) => {
                                 <li>
                                     <a href="restaurantCategories.php" className="navLinkC ">
                                         <i className="bi bi-circle"></i><span>Add Product</span>
+                                      
                                     </a>
                                 </li>
                                 <li>
                                     <a href="restaurantCategories.php" className="navLinkC ">
-                                    <i className="bi bi-circle"></i><span>Add Product</span>
+                                    <i className="bi bi-circle"></i><span>Manage Product</span>
                                     </a>
                                 </li>
                             </ul>

@@ -69,6 +69,7 @@ a {
     background-color: #fff;
 
 }
+
 .sidebarwidth {
     width: 0;
     display: none;
@@ -78,11 +79,14 @@ a {
 .sideBarInner {
     overflow-x: hidden;
     position: relative;
-    .aSideCloseButton{
+
+    .aSideCloseButton {
         position: absolute;
         right: 0;
+        display: none;
         top: 0;
-        button{
+
+        button {
             background-color: rgba(255, 0, 0, 0);
             font-size: 18px;
         }
@@ -180,8 +184,6 @@ a {
     }
 }
 
-
-
 .AppFull {
     background-color: #e8ebf046;
     margin-left: 0;
@@ -269,11 +271,18 @@ header {
             background-color: #aa97b000;
             color: #e92b2b;
             outline: none;
+
             i {
                 font-size: 30px;
             }
         }
     }
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -282,12 +291,14 @@ header {
         // margin-left: 93px;
         margin-left: 0;
     }
-    .sidebar{
+
+    .sidebar {
         width: 0;
         display: none;
         transition: all 0.3s;
     }
-    .sidebarwidth{
+
+    .sidebarwidth {
         position: fixed;
         display: block;
         top: 0;
@@ -301,11 +312,25 @@ header {
         box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
         background-color: #fff;
     }
+
+    .sideBarInner {
+        .aSideCloseButton {
+            display: block;
+        }
+    }
+
+
 }
 
 @media only screen and (max-width: 991px) {}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .sidebarwidth {
+
+        width: 100%;
+
+    }
+}
 
 @media only screen and (max-width: 576px) {
     .sidebar {

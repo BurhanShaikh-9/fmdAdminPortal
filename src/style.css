@@ -66,6 +66,7 @@ a {
 .sideBarInner .aSideCloseButton {
   position: absolute;
   right: 0;
+  display: none;
   top: 0;
 }
 .sideBarInner .aSideCloseButton button {
@@ -220,6 +221,13 @@ header .headerInner .menuButton i {
   font-size: 30px;
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
 @media only screen and (max-width: 1200px) {
   .App {
     margin-left: 0;
@@ -242,6 +250,14 @@ header .headerInner .menuButton i {
     overflow-x: hidden;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
     background-color: #fff;
+  }
+  .sideBarInner .aSideCloseButton {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sidebarwidth {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 576px) {
