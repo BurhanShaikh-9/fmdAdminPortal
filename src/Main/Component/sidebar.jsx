@@ -21,7 +21,9 @@ export const Sidebar = () => {
                         <button onClick={closeButton}><i className="bi bi-x"></i></button>
                     </div>
                     <div className="LogoImage">
-                        <img src={logoImg} alt="" />
+                        <Link to={ROUTES.HOMEPAGE} >
+                            <img src={logoImg} alt="" />
+                        </Link>
                     </div>
 
                     <ul className="sidebar-nav" id="sidebar-nav">
