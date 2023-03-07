@@ -243,7 +243,8 @@ header .headerInner .menuButton i {
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=text],
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=email],
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=number],
-.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=file] select {
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=file],
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields select {
   width: 100%;
   border: 1px solid rgb(219, 219, 219);
   height: 40px;
@@ -253,7 +254,8 @@ header .headerInner .menuButton i {
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=text]:focus,
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=email]:focus,
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=number]:focus,
-.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=file] select:focus {
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=file]:focus,
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields select:focus {
   outline: #e92b2b;
 }
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields button {
