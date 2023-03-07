@@ -44,7 +44,7 @@ a {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 350px;
+  width: 300px;
   z-index: 999;
   transition: all 0.3s;
   padding: 20px;
@@ -147,14 +147,12 @@ a {
 }
 
 .AppFull {
-  background-color: rgba(232, 235, 240, 0.2745098039);
   margin-left: 0;
   transition: all 0.3s;
 }
 
 .App {
-  background-color: rgba(232, 235, 240, 0.2745098039);
-  margin-left: 350px;
+  margin-left: 300px;
   transition: all 0.3s;
 }
 
@@ -226,6 +224,134 @@ header .headerInner .menuButton i {
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+.login .loginBody label {
+  display: block;
+}
+
+.mainSection .mainSectionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainSection .mainSectionWrapper .cardForm {
+  width: 90%;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields label {
+  display: block;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=text],
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=email],
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=number],
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=file] select {
+  width: 100%;
+  border: 1px solid rgb(219, 219, 219);
+  height: 40px;
+  padding: 6px;
+  border-radius: 7px;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=text]:focus,
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=email]:focus,
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=number]:focus,
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields input[type=file] select:focus {
+  outline: #e92b2b;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields button {
+  display: block;
+  width: 150px;
+  background-color: #e92b2b;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 40px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  background-position: -110px 0;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .availOuter {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .availOuter .availInner {
+  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton .switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 25px;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3.55px;
+  background-color: white;
+  transition: 0.4s;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton input:checked + .slider {
+  background-color: #e92b2b;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton input:focus + .slider {
+  box-shadow: 0 0 1px #e92b2b;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton input:checked + .slider:before {
+  transform: translateX(28px);
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton .slider.round {
+  border-radius: 34px;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton .slider.round:before {
+  border-radius: 50%;
+}
+
+.footer2 {
+  margin-top: 30px;
+}
+.footer2 .footer2Main {
+  width: 90%;
+  color: #e92b2b;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 10px;
+  align-items: center;
+}
+.footer2 .footer2Main .footer2Link a {
+  color: #e92b2b;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 1200px) {

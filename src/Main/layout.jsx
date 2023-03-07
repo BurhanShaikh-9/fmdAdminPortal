@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 import { Outlet } from 'react-router'
 import { Header } from './Component/header'
-
-export const Layout = (props) => {
-
-
+import { Footer } from './Component/footer'
+export const Layout = () => {
   return (
-    // <div> <Header /> </div>
     <>
       <Header />
       <Outlet />
-
+      <Footer/>
     </>
   )
 }
