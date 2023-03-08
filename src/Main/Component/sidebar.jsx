@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import logoImg from '../../assets/images/Logo.png'
 import { SidebarContext } from '../../App'
-import { NavLink  } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { ROUTES } from '../../utils/Routes'
 
 export const Sidebar = () => {
@@ -21,7 +21,7 @@ export const Sidebar = () => {
                         <button onClick={closeButton}><i className="bi bi-x"></i></button>
                     </div>
                     <div className="LogoImage">
-                        <NavLink  to={ROUTES.HOMEPAGE} activeclassname="active" >
+                        <NavLink to={ROUTES.HOMEPAGE} activeclassname="active" >
                             <img src={logoImg} alt="" />
                         </NavLink >
                     </div>
@@ -33,14 +33,14 @@ export const Sidebar = () => {
                             </a>
                             <ul id="charts-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                                 <li>
-                                    <NavLink  to={ROUTES.DOCTOR_FORM} className="navLinkA " activeclassname="active">
+                                    <NavLink to={ROUTES.DOCTOR_FORM} className="navLinkA " activeclassname="active">
                                         {/* <input type="radio" name='sidebar' id='addDocSideBar' /> */}
                                         <i className="bi bi-plus-lg" /><span>Add Doctor</span>
 
                                     </NavLink >
                                 </li>
                                 <li>
-                                    <NavLink  to={ROUTES.DOCTOR_MANAGE} className="navLinkC " activeclassname="active">
+                                    <NavLink to={ROUTES.DOCTOR_MANAGE} className="navLinkC " activeclassname="active">
                                         {/* <input type="radio" name='sidebar' id='manageDocSideBar' /> */}
                                         <i className="bi bi-pencil" /><span>Manage Doctors</span>
                                     </NavLink>
@@ -53,14 +53,14 @@ export const Sidebar = () => {
                             </a>
                             <ul id="charts-nav1" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                                 <li>
-                                    <NavLink  to={ROUTES.LAB_FORM} className="navLinkB " activeclassname="active">
+                                    <NavLink to={ROUTES.LAB_FORM} className="navLinkB " activeclassname="active">
                                         <i className="bi bi-plus-lg" /><span>Add Lab</span>
 
                                     </NavLink >
                                 </li>
                                 <li>
-                                    <NavLink  to={ROUTES.LAB_MANAGE} className="navLinkC " activeclassname="active">
-                                    <i className="bi bi-pencil" /><span>Manage Labs</span>
+                                    <NavLink to={ROUTES.LAB_MANAGE} className="navLinkC " activeclassname="active">
+                                        <i className="bi bi-pencil" /><span>Manage Labs</span>
                                     </NavLink >
                                 </li>
                             </ul>
@@ -71,22 +71,30 @@ export const Sidebar = () => {
                             </a>
                             <ul id="charts-nav2" className="nav-content collapse " data-bs-parent="#sidebar-nav" >
                                 <li>
-                                    <NavLink  to={ROUTES.PRODUCT_FORM} className="navLinkC " activeclassname="active">
-                                    <i className="bi bi-plus-lg" /><span>Add Product</span>
+                                    <NavLink to={ROUTES.PRODUCT_FORM} className="navLinkC " activeclassname="active">
+                                        <i className="bi bi-plus-lg" /><span>Add Product</span>
 
                                     </NavLink >
                                 </li>
 
                                 <li>
-                                    <NavLink  to={ROUTES.PHARMACY_FORM} className="navLinkC " activeclassname="active">
-                                    <i className="bi bi-plus-lg" /><span>Add Pharmacy</span>
-
+                                    <NavLink to={ROUTES.PHARMACY_FORM} className="navLinkC " activeclassname="active">
+                                        <i className="bi bi-plus-lg" /><span>Add Pharmacy</span>
                                     </NavLink >
                                 </li>
-
                                 <li>
-                                    <NavLink  to={ROUTES.PHARMACY_MANAGE} className="navLinkC " activeclassname="active"> 
-                                    <i className="bi bi-pencil" /><span>Manage Product</span>
+                                    <NavLink to={ROUTES.BRAND_FORM} className="navLinkC " activeclassname="active">
+                                        <i className="bi bi-plus-lg" /><span>Add Brand</span>
+                                    </NavLink >
+                                </li>
+                                <li>
+                                    <NavLink to={ROUTES.CATEGORY_FORM} className="navLinkC " activeclassname="active">
+                                        <i className="bi bi-plus-lg" /><span>Add Category</span>
+                                    </NavLink >
+                                </li>
+                                <li>
+                                    <NavLink to={ROUTES.PHARMACY_MANAGE} className="navLinkC " activeclassname="active">
+                                        <i className="bi bi-pencil" /><span>Manage Product</span>
                                     </NavLink >
                                 </li>
                             </ul>

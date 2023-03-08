@@ -63,7 +63,7 @@ export const ManageDoctor = () => {
                                                         <td>{item.cnic}</td>
                                                         <td>{item.availability}</td>
                                                         <td>{item.speciality}</td>
-                                                        <td><Link href=""><i class="bi bi-pen"></i></Link> <Link href=""><i class="bi bi-trash3"></i></Link> </td>
+                                                        <td><Link href=""><i className="bi bi-pen"></i></Link> <Link href=""><i className="bi bi-trash3"></i></Link> </td>
                                                     </tr>
                                                 );
                                             })}

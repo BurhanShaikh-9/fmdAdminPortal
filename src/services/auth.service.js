@@ -9,12 +9,24 @@ const AuthService = () => {
     const labRegister = (data) => {
         return axios.post(`${baseUrl}/labs`, data)
     }
+    const addProduct = (data) => {
+        return axios.post(`${baseUrl}/labs`, data)
+    }
+    const addBrand = (data) => {
+        return axios.post(`${baseUrl}/brands`, data)
+    }
+    const addCategory = (data) => {
+        return axios.post(`${baseUrl}/brands`, data)
+    }
+    const addPharmacy = (data) => {
+        return axios.post(`${baseUrl}/labs`, data)
+    }
 
 
 
 
 
-    return { doctorRegister, labRegister }
+    return { doctorRegister, labRegister,addBrand,addCategory }
 }
 
 export default AuthService

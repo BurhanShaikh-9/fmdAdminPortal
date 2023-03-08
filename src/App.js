@@ -12,6 +12,8 @@ import { ManageDoctor } from './Main/WebPage/Doctors/manageDoctor';
 import { ManageLab } from './Main/WebPage/Labs/manageLab';
 import { ManagePharmacy } from './Main/WebPage/pharmacy/managePharmacy';
 import { ProductForm } from './Main/WebPage/pharmacy/productForm';
+import { BrandForm } from './Main/WebPage/pharmacy/brandForm';
+import { CategoryForm } from './Main/WebPage/pharmacy/CategoryForm';
 
 export const SidebarContext = createContext({ sideBar: false, setSideBar: () => { } })
 
@@ -37,6 +39,8 @@ function App() {
               <Route path={ROUTES.PHARMACY_MANAGE} element={<ManagePharmacy />} />
               <Route path={ROUTES.PHARMACY_FORM} element={<PharmacyForm />} />
               <Route path={ROUTES.PRODUCT_FORM} element={< ProductForm />} />
+              <Route path={ROUTES.BRAND_FORM} element={< BrandForm />} />
+              <Route path={ROUTES.CATEGORY_FORM} element={< CategoryForm />} />
             </Route>
           </Routes>
         </div>

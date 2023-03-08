@@ -7,6 +7,8 @@ export const ROUTES = {
     LAB_FORM:"lab_form",
     PHARMACY_MANAGE:"pharmacy_manage",
     PHARMACY_FORM:"pharmacy_form",
-    PRODUCT_FORM:"product_form"
+    PRODUCT_FORM:"product_form",
+    BRAND_FORM:"brand_form",
+    CATEGORY_FORM:"category_form"
 }
 

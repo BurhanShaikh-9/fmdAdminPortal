@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const PharmacyForm = () => {
+  
     return (
         <>
             <section className='mainSection'>
@@ -41,7 +42,7 @@ export const PharmacyForm = () => {
                                         </div>
                                         <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 ">
                                             <div className="fields">
-                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-plus-square"/> Add Product</label>
+                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-plus-square" /> Add Product</label>
                                                 <div className="toggleButton">
                                                     <label className="switch">
                                                         <input type="checkbox" />
@@ -52,7 +53,7 @@ export const PharmacyForm = () => {
                                         </div>
                                         <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 ">
                                             <div className="fields">
-                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-pen"/>Edit Product</label>
+                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-pen" />Edit Product</label>
                                                 <div className="toggleButton">
                                                     <label className="switch">
                                                         <input type="checkbox" />
@@ -63,7 +64,7 @@ export const PharmacyForm = () => {
                                         </div>
                                         <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 ">
                                             <div className="fields">
-                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-trash3"/>Delete Product</label>
+                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-trash3" />Delete Product</label>
                                                 <div className="toggleButton">
                                                     <label className="switch">
                                                         <input type="checkbox" />
@@ -74,7 +75,7 @@ export const PharmacyForm = () => {
                                         </div>
                                         <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 ">
                                             <div className="fields">
-                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-file-text"/>Reports</label>
+                                                <label htmlFor="doctorPhone" className='toggleLabel'><i className="bi bi-file-text" />Reports</label>
                                                 <div className="toggleButton">
                                                     <label className="switch">
                                                         <input type="checkbox" />

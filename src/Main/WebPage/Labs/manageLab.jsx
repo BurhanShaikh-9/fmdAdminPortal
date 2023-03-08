@@ -61,7 +61,7 @@ export const ManageLab = () => {
                                                         <td>{item.address}</td>
                                                         <td>{item.re_name}</td>
                                                         <td>{item.re_number}</td>
-                                                        <td><Link href=""><i class="bi bi-pen"></i></Link> <Link href=""><i class="bi bi-trash3"></i></Link> </td>
+                                                        <td><Link href=""><i className="bi bi-pen"></i></Link> <Link href=""><i className="bi bi-trash3"></i></Link> </td>
                                                     </tr>
                                                 );
                                             })}

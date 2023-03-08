@@ -66,7 +66,7 @@ export const ManagePharmacy = () => {
                                                         <td>{item.tag}</td>
                                                         <td>{item.price}</td>
                                                         <td>{item.discount}</td>
-                                                        <td><Link href=""><i class="bi bi-pen"></i></Link> <Link href=""><i class="bi bi-trash3"></i></Link> </td>
+                                                        <td><Link href=""><i className="bi bi-pen"></i></Link> <Link href=""><i className="bi bi-trash3"></i></Link> </td>
                                                     </tr>
                                                 );
                                             })}
