@@ -39,7 +39,7 @@ export const DoctorForm = () => {
     handleLogin(DoctorRegister).then((res) => {
       console.log(res)
     }).catch((err) => {
-      console.log(err.message, "Doctor Register Error")
+      console.log(err, "Doctor Register Error")
     })
   }
 
