@@ -14,7 +14,7 @@ export const LabForm = () => {
         logo: "",
     })
 
-    const getLoginInput = () => {
+    const getLoginInput = (e) => {
         const name = e.target.name;
         const value = e.target.value;
         setLabData({ ...labData, [name]: value })
