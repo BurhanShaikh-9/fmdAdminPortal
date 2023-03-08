@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import sunImg from '../../../assets/images/sun1.png'
 import moonImg from '../../../assets/images/moon.png'
-import GeneratePassword from './generatePassword'
+import GeneratePassword from '../../../services/generatePassword'
 import AuthService from '../../../services/auth.service'
 
 export const DoctorForm = () => {
   const { generatePassword } = GeneratePassword();
-  const { handleLogin, onSuccessLogin } = AuthService();
+  const { doctorRegister, onSuccessLogin } = AuthService();
   const [password, setPassword] = useState('')
   const [doctorData, setDoctorData] = useState({
     fullname: "",
@@ -16,9 +16,9 @@ export const DoctorForm = () => {
     qualification: "",
     experience: "",
     specialist_category: "",
-    pmdaId: "",
-    cnic: "",
-    availability: "",
+    // pmdaId: "",
+    // cnic: "",
+    // availability: "",
   })
 
   const getLoginInput = (e) => {
@@ -36,7 +36,7 @@ export const DoctorForm = () => {
     e.preventDefault();
     const DoctorRegister = { ...doctorData, password }
     console.log(DoctorRegister, "doctorRegisterData");
-    handleLogin(DoctorRegister).then((res) => {
+    doctorRegister(DoctorRegister).then((res) => {
       console.log(res)
     }).catch((err) => {
       console.log(err, "Doctor Register Error")
@@ -81,7 +81,7 @@ export const DoctorForm = () => {
                         <input type="number" id='doctorPhone' name='phone' placeholder='Enter Number...' onChange={getLoginInput} />
                       </div>
                     </div>
-                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                    {/* <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
                       <div className="fields">
                         <label htmlFor="doctorPmdaNo">PMDA ID</label>
                         <input type="text" id='doctorPmdaNo' placeholder='Enter PMDA ID...' name='pmdaId' onChange={getLoginInput} />
@@ -92,7 +92,7 @@ export const DoctorForm = () => {
                         <label htmlFor="doctorCNIC">CNIC</label>
                         <input type="text" id='doctorCNIC' placeholder='Enter Number...' name='cnic' onChange={getLoginInput} />
                       </div>
-                    </div>
+                    </div> */}
                     <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
                       <div className="fields">
                         <label htmlFor="doctorPmdaNo">Qualification</label>
