@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { functionalUpdate } from 'react-table';
 
 
 export const ManageDoctor = () => {
@@ -25,6 +26,7 @@ export const ManageDoctor = () => {
         { name: "Tobi", email: "tobi@email.com", phone: "03123575312", pmda_id: "124124", cnic: "41302443428282", availability: "Day", speciality: "Surgeon", },
         { name: "Tobi", email: "tobi@email.com", phone: "03123575312", pmda_id: "124124", cnic: "41302443428282", availability: "Day", speciality: "Surgeon", },
     ]
+// functionalUpdateupdate
 // update
     return (
         <>
