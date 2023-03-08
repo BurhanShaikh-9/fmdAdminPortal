@@ -130,12 +130,12 @@ a {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #012970;
+  color: rgba(233, 43, 43, 0.8078431373);
   padding: 10px 0 10px 10px;
   transition: all 0.3s;
 }
 .sideBarInner .sidebar-nav .nav-content a i {
-  font-size: 6px;
+  font-size: 15px;
   margin-right: 8px;
   line-height: 0;
   border-radius: 50%;
@@ -144,6 +144,13 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.sideBarInner .active {
+  background-color: rgba(252, 220, 220, 0.8078431373);
+  border-radius: 10px;
+  height: 30px;
+  color: white;
+  margin-top: 10px;
 }
 
 .AppFull {
@@ -200,6 +207,10 @@ header .headerInner .navRight .profileDropDown .dropdown-toggle img {
 header .headerInner .navRight .profileDropDown .dropdown-toggle::after {
   display: none;
 }
+header .headerInner .navRight .profileDropDown .dropdown-menu li a i {
+  color: #e92b2b;
+  margin-right: 10px;
+}
 header .headerInner .navRight .aboutDoctor {
   text-align: right;
 }
@@ -233,6 +244,17 @@ header .headerInner .menuButton i {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.mainSection .mainSectionWrapper .heading {
+  text-align: left;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.mainSection .mainSectionWrapper .heading p {
+  font-size: 25px;
+  color: #e92b2b;
+  font-weight: 600;
 }
 .mainSection .mainSectionWrapper .cardForm {
   width: 90%;
@@ -247,7 +269,7 @@ header .headerInner .menuButton i {
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields select {
   width: 100%;
   border: 1px solid rgb(219, 219, 219);
-  height: 40px;
+  height: 38px;
   padding: 6px;
   border-radius: 7px;
 }
@@ -284,6 +306,23 @@ header .headerInner .menuButton i {
   justify-content: center;
   gap: 10px;
   align-items: center;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .availOuter .availInner input {
+  accent-color: red;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .availOuter .availInner .labelDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .availOuter .availInner img {
+  width: 35px;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .availOuter .availInner .moon {
+  width: 30px;
+}
+.mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleLabel i {
+  color: #e92b2b;
 }
 .mainSection .mainSectionWrapper .cardForm .additionForm .fields .toggleButton {
   height: 40px;
@@ -345,7 +384,7 @@ header .headerInner .menuButton i {
   width: 90%;
   color: #e92b2b;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 12px;
   padding: 10px;
   align-items: center;

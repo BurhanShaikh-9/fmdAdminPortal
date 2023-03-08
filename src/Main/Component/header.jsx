@@ -41,9 +41,9 @@ export const Header = (props) => {
 
                             </button>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Profile</a></li>
-                                <li><a className="dropdown-item" href="#">Inbox</a></li>
-                                <li><a className="dropdown-item" href="#">Logout</a></li>
+                                <li><a className="dropdown-item" href="#"><i className="bi bi-person"/>Profile</a></li>
+                                <li><a className="dropdown-item" href="#"><i className="bi bi-envelope"/>Inbox</a></li>
+                                <li><a className="dropdown-item" href="#"><i className="bi bi-box-arrow-in-left"/>Logout</a></li>
                             </ul>
                         </div>
                     </div>

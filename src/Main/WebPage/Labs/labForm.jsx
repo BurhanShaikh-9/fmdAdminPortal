@@ -6,6 +6,11 @@ export const LabForm = () => {
             <section className='mainSection'>
                 <div className="container">
                     <div className="mainSectionWrapper">
+                        <div className="heading">
+                            <p>
+                                Add Lab
+                            </p>
+                        </div>
                         <div className="card cardForm">
                             <div className="card-body">
                                 <form className="additionForm">
@@ -49,7 +54,7 @@ export const LabForm = () => {
                                         </div>
 
                                         <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-                                        <div className="fields">
+                                            <div className="fields">
                                                 <label htmlFor="doctorSpecility">Lab Representative No.</label>
                                                 <input type="text" id='doctorCNIC' placeholder='Enter Number...' />
                                             </div>

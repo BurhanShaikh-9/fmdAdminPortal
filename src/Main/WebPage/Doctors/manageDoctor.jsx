@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export const ManageDoctor = () => {
@@ -30,6 +31,11 @@ export const ManageDoctor = () => {
             <section className='mainSection'>
                 <div className="container">
                     <div className="mainSectionWrapper">
+                        <div className="heading">
+                            <p>
+                                Manage Doctor
+                            </p>
+                        </div>
                         <div className="card cardForm">
                             <div className="card-body">
                                 <div className="table-responsive">
@@ -43,6 +49,7 @@ export const ManageDoctor = () => {
                                                 <th scope="col">CNIC</th>
                                                 <th scope="col">Availability</th>
                                                 <th scope="col">Speciality</th>
+                                                <th scope="col">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -56,6 +63,7 @@ export const ManageDoctor = () => {
                                                         <td>{item.cnic}</td>
                                                         <td>{item.availability}</td>
                                                         <td>{item.speciality}</td>
+                                                        <td><Link href=""><i class="bi bi-pen"></i></Link> <Link href=""><i class="bi bi-trash3"></i></Link> </td>
                                                     </tr>
                                                 );
                                             })}

@@ -1,11 +1,17 @@
 import React from 'react'
-
+import sunImg from '../../../assets/images/sun1.png'
+import moonImg from '../../../assets/images/moon.png'
 export const DoctorForm = () => {
   return (
     <>
       <section className='mainSection'>
         <div className="container">
           <div className="mainSectionWrapper">
+            <div className="heading">
+              <p>
+                Add Doctor
+              </p>
+            </div>
             <div className="card cardForm">
               <div className="card-body">
                 <form className="additionForm">
@@ -56,11 +62,17 @@ export const DoctorForm = () => {
                         <label htmlFor="doctorDayAvailability">Availability</label>
                         <div className='availOuter'>
                           <div className="availInner">
-                            <label htmlFor="doctorDayAvailability">Day</label>
+                            <div className="labelDiv">
+                              <img src={sunImg} alt="" />
+                              <label htmlFor="doctorDayAvailability">Day</label>
+                            </div>
                             <input type="radio" id="doctorDayAvailability" name='availability' />
                           </div>
                           <div className="availInner">
-                            <label htmlFor="doctorNightAvailability">Night</label>
+                            <div className="labelDiv">
+                              <img className='moon' src={moonImg} alt="" />
+                              <label htmlFor="doctorNightAvailability">Night</label>
+                            </div>
                             <input type="radio" name='availability' id='doctorNightAvailability' />
                           </div>
                         </div>

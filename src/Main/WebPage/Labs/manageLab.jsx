@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 export const ManageLab = () => {
 
@@ -29,6 +29,11 @@ export const ManageLab = () => {
             <section className='mainSection'>
                 <div className="container">
                     <div className="mainSectionWrapper">
+                        <div className="heading">
+                            <p>
+                                Manage Lab
+                            </p>
+                        </div>
                         <div className="card cardForm">
                             <div className="card-body">
                                 <div className="table-responsive">
@@ -42,6 +47,7 @@ export const ManageLab = () => {
                                                 <th scope="col">Address</th>
                                                 <th scope="col">Representative Name</th>
                                                 <th scope="col">Representative Number</th>
+                                                <th scope="col">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -55,6 +61,7 @@ export const ManageLab = () => {
                                                         <td>{item.address}</td>
                                                         <td>{item.re_name}</td>
                                                         <td>{item.re_number}</td>
+                                                        <td><Link href=""><i class="bi bi-pen"></i></Link> <Link href=""><i class="bi bi-trash3"></i></Link> </td>
                                                     </tr>
                                                 );
                                             })}

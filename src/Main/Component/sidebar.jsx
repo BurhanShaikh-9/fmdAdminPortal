@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import logoImg from '../../assets/images/Logo.png'
 import { SidebarContext } from '../../App'
-import { Link } from 'react-router-dom'
+import { NavLink  } from 'react-router-dom'
 import { ROUTES } from '../../utils/Routes'
 
 export const Sidebar = () => {
@@ -21,9 +21,9 @@ export const Sidebar = () => {
                         <button onClick={closeButton}><i className="bi bi-x"></i></button>
                     </div>
                     <div className="LogoImage">
-                        <Link to={ROUTES.HOMEPAGE} >
+                        <NavLink  to={ROUTES.HOMEPAGE} activeclassname="active" >
                             <img src={logoImg} alt="" />
-                        </Link>
+                        </NavLink >
                     </div>
 
                     <ul className="sidebar-nav" id="sidebar-nav">
@@ -33,14 +33,17 @@ export const Sidebar = () => {
                             </a>
                             <ul id="charts-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                                 <li>
-                                    <Link to={ROUTES.DOCTOR_FORM} className="navLinkA ">
-                                        <i className="bi bi-circle"></i><span>Add Doctor</span>
-                                    </Link>
+                                    <NavLink  to={ROUTES.DOCTOR_FORM} className="navLinkA " activeclassname="active">
+                                        {/* <input type="radio" name='sidebar' id='addDocSideBar' /> */}
+                                        <i className="bi bi-plus-lg" /><span>Add Doctor</span>
+
+                                    </NavLink >
                                 </li>
                                 <li>
-                                    <Link to={ROUTES.DOCTOR_MANAGE} className="navLinkC ">
-                                        <i className="bi bi-circle"></i><span>Manage Doctors</span>
-                                    </Link>
+                                    <NavLink  to={ROUTES.DOCTOR_MANAGE} className="navLinkC " activeclassname="active">
+                                        {/* <input type="radio" name='sidebar' id='manageDocSideBar' /> */}
+                                        <i className="bi bi-pencil" /><span>Manage Doctors</span>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </li>
@@ -50,15 +53,15 @@ export const Sidebar = () => {
                             </a>
                             <ul id="charts-nav1" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                                 <li>
-                                    <Link to={ROUTES.LAB_FORM} className="navLinkB ">
-                                        <i className="bi bi-circle"></i><span>Add Lab</span>
+                                    <NavLink  to={ROUTES.LAB_FORM} className="navLinkB " activeclassname="active">
+                                        <i className="bi bi-plus-lg" /><span>Add Lab</span>
 
-                                    </Link>
+                                    </NavLink >
                                 </li>
                                 <li>
-                                    <Link to={ROUTES.LAB_MANAGE} className="navLinkC ">
-                                        <i className="bi bi-circle"></i><span>Manage Labs</span>
-                                    </Link>
+                                    <NavLink  to={ROUTES.LAB_MANAGE} className="navLinkC " activeclassname="active">
+                                    <i className="bi bi-pencil" /><span>Manage Labs</span>
+                                    </NavLink >
                                 </li>
                             </ul>
                         </li>
@@ -68,23 +71,23 @@ export const Sidebar = () => {
                             </a>
                             <ul id="charts-nav2" className="nav-content collapse " data-bs-parent="#sidebar-nav" >
                                 <li>
-                                    <Link to={ROUTES.PRODUCT_FORM} className="navLinkC ">
-                                        <i className="bi bi-circle"></i><span>Add Product</span>
+                                    <NavLink  to={ROUTES.PRODUCT_FORM} className="navLinkC " activeclassname="active">
+                                    <i className="bi bi-plus-lg" /><span>Add Product</span>
 
-                                    </Link>
+                                    </NavLink >
                                 </li>
 
                                 <li>
-                                    <Link to={ROUTES.PHARMACY_FORM} className="navLinkC ">
-                                        <i className="bi bi-circle"></i><span>Add Pharmacy</span>
+                                    <NavLink  to={ROUTES.PHARMACY_FORM} className="navLinkC " activeclassname="active">
+                                    <i className="bi bi-plus-lg" /><span>Add Pharmacy</span>
 
-                                    </Link>
+                                    </NavLink >
                                 </li>
 
                                 <li>
-                                    <Link to={ROUTES.PHARMACY_MANAGE} className="navLinkC ">
-                                        <i className="bi bi-circle"></i><span>Manage Product</span>
-                                    </Link>
+                                    <NavLink  to={ROUTES.PHARMACY_MANAGE} className="navLinkC " activeclassname="active"> 
+                                    <i className="bi bi-pencil" /><span>Manage Product</span>
+                                    </NavLink >
                                 </li>
                             </ul>
                         </li>

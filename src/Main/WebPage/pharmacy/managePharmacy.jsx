@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 export const ManagePharmacy = () => {
 
@@ -16,12 +16,12 @@ export const ManagePharmacy = () => {
     ];
 
     const data = [
-        { name: "panadol", description: "lorLorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eos.em", title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag",price:"200pkr",discount:"20%", },
-        { name: "panadol", description: "lorLorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eos.em", title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag",price:"200pkr",discount:"20%", },
-        { name: "panadol", description: "lorLorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eos.em", title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag",price:"200pkr",discount:"20%", },
-        { name: "panadol", description: "lorLorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eos.em", title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag",price:"200pkr",discount:"20%", },
-        { name: "panadol", description: "lorLorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eos.em", title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag",price:"200pkr",discount:"20%", },
-        { name: "panadol", description: "lorLorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eos.em", title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag",price:"200pkr",discount:"20%", },
+        { name: "panadol", title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag", price: "200pkr", discount: "20%", },
+        { name: "panadol",  title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag", price: "200pkr", discount: "20%", },
+        { name: "panadol",  title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag", price: "200pkr", discount: "20%", },
+        { name: "panadol",  title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag", price: "200pkr", discount: "20%", },
+        { name: "panadol",  title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag", price: "200pkr", discount: "20%", },
+        { name: "panadol",  title: "Lorem ipsum dolor sit amet consectetur.", quantity: "20", brand: "124124", category: "category", tag: "tag", price: "200pkr", discount: "20%", },
 
     ]
 
@@ -30,6 +30,11 @@ export const ManagePharmacy = () => {
             <section className='mainSection'>
                 <div className="container">
                     <div className="mainSectionWrapper">
+                        <div className="heading">
+                            <p>
+                                Manage Pharmacy
+                            </p>
+                        </div>
                         <div className="card cardForm">
                             <div className="card-body">
                                 <div className="table-responsive">
@@ -37,7 +42,7 @@ export const ManagePharmacy = () => {
                                         <thead>
                                             <tr>
                                                 <th scope="col">Name</th>
-                                                <th scope="col">Description</th>
+                                                {/* <th scope="col">Description</th> */}
                                                 <th scope="col">Title</th>
                                                 <th scope="col">Quantity</th>
                                                 <th scope="col">Brand</th>
@@ -45,6 +50,7 @@ export const ManagePharmacy = () => {
                                                 <th scope="col">Tag</th>
                                                 <th scope="col">Price</th>
                                                 <th scope="col">Discount</th>
+                                                <th scope="col">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -52,15 +58,15 @@ export const ManagePharmacy = () => {
                                                 return (
                                                     <tr key={keyid}>
                                                         <td>{item.name}</td>
-                                                        <td>{item.description}</td>
+                                                        {/* <td>{item.description}</td> */}
                                                         <td>{item.title}</td>
                                                         <td>{item.quantity}</td>
                                                         <td>{item.brand}</td>
                                                         <td>{item.category}</td>
                                                         <td>{item.tag}</td>
-                                                  
                                                         <td>{item.price}</td>
                                                         <td>{item.discount}</td>
+                                                        <td><Link href=""><i class="bi bi-pen"></i></Link> <Link href=""><i class="bi bi-trash3"></i></Link> </td>
                                                     </tr>
                                                 );
                                             })}

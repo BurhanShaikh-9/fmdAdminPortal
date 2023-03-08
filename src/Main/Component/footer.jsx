@@ -12,10 +12,10 @@ export const Footer = () => {
                                 <div >
                                     <p>© Find My Doctor 2023 - Design By Array Digitals</p>
                                 </div>
-                                <div className='footer2Link'>
+                                {/* <div className='footer2Link'>
                                     <a href="#">Privacy Policy</a>
                                     <a href="#">Term of Use</a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
