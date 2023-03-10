@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import logoImg from '../../assets/images/Logo.png'
 import { SidebarContext } from '../../App'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { ROUTES } from '../../utils/Routes'
 
 export const Sidebar = () => {
@@ -21,12 +21,25 @@ export const Sidebar = () => {
                         <button onClick={closeButton}><i className="bi bi-x"></i></button>
                     </div>
                     <div className="LogoImage">
-                        <NavLink to={ROUTES.HOMEPAGE} activeclassname="active" >
+                        <Link to={ROUTES.HOMEPAGE} >
                             <img src={logoImg} alt="" />
-                        </NavLink >
+                        </Link >
                     </div>
 
                     <ul className="sidebar-nav" id="sidebar-nav">
+                    <li className="nav-item">
+                            <a className="nav-link  collapsed" data-bs-target="#charts-nav0" data-bs-toggle="collapse" href="#">
+                                <i className="ri-dashboard-fill sideIcon" /><span>Menu</span><i className="bi bi-chevron-down ms-auto"></i>
+                            </a>
+                            <ul id="charts-nav0" className="nav-content collapse " data-bs-parent="#sidebar-nav">
+                                <li>
+                                    <NavLink to={ROUTES.HOMEPAGE} className="navLinkA " activeclassname="active">
+                                      
+                                        <i className="ri-bar-chart-box-line" /><span>Dashboard</span>
+                                    </NavLink >
+                                </li>
+                            </ul>
+                        </li>
                         <li className="nav-item">
                             <a className="nav-link  collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
                                 <i className="bi bi-person-lines-fill sideIcon" /><span>Doctors</span><i className="bi bi-chevron-down ms-auto"></i>

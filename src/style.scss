@@ -79,7 +79,7 @@ a {
 .sideBarInner {
     overflow-x: hidden;
     position: relative;
-   
+
     .aSideCloseButton {
         position: absolute;
         right: 0;
@@ -180,13 +180,14 @@ a {
             list-style: none;
         }
     }
-     .active{
+
+    .active {
         background-color: #fcdcdcce;
         border-radius: 10px;
         height: 30px;
         color: white;
         margin-top: 10px;
-     
+
     }
 }
 
@@ -257,10 +258,11 @@ header {
                         display: none;
                     }
                 }
-                .dropdown-menu{
-                    li{
-                        a{
-                            i{
+
+                .dropdown-menu {
+                    li {
+                        a {
+                            i {
                                 color: #e92b2b;
                                 margin-right: 10px;
                             }
@@ -268,12 +270,15 @@ header {
                     }
                 }
             }
+
             .aboutDoctor {
                 text-align: right;
+
                 .doctorName {
                     color: #e92b2b;
                     font-weight: 600;
                 }
+
                 .doctorSpeciality {
                     color: #aa97b0;
                 }
@@ -313,16 +318,19 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .heading{
+
+        .heading {
             text-align: left;
             width: 90%;
             margin-bottom: 20px;
-            p{
+
+            p {
                 font-size: 25px;
                 color: #e92b2b;
                 font-weight: 600;
             }
         }
+
         .cardForm {
             width: 90%;
 
@@ -364,33 +372,40 @@ header {
                             justify-content: center;
                             gap: 10px;
                             align-items: center;
-                            input{
+
+                            input {
                                 accent-color: red;
                             }
-                            .labelDiv{
+
+                            .labelDiv {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                             }
-                            img{
+
+                            img {
                                 width: 35px;
                             }
-                            .moon{
+
+                            .moon {
                                 width: 30px;
                             }
                         }
                     }
-                    .toggleLabel{
-                        i{
+
+                    .toggleLabel {
+                        i {
                             color: #e92b2b;
                         }
                     }
+
                     .toggleButton {
                         height: 40px;
                         display: flex;
-              
+
                         justify-content: center;
                         flex-direction: column;
+
                         .switch {
                             position: relative;
                             display: inline-block;
@@ -448,6 +463,33 @@ header {
 
                         .slider.round:before {
                             border-radius: 50%;
+                        }
+                    }
+                }
+            }
+
+            .chart {
+                .chartHeading {
+                    p {
+                        font-size: 20px;
+                        color: #e92b2b;
+                        font-weight: 600;
+                    }
+
+                    small {
+                        color: grey;
+                    }
+                }
+
+                .box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80px;
+                    .details{
+                        .category{
+                            color: #e92b2b;
+                            font-weight: 600;
                         }
                     }
                 }
@@ -510,7 +552,7 @@ header {
         .aSideCloseButton {
             display: block;
         }
-       
+
     }
 
 
