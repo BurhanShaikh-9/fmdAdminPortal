@@ -318,6 +318,13 @@ export const Dashboard = () => {
   const LineChart = {
     chart: {
       type: 'line',
+      dropShadow: {
+        enabled: true,
+        top: 1,
+        left: 1,
+        blur: 2,
+        opacity: 0.2,
+      },
       toolbar: {
         show: true,
         tools: {
@@ -353,7 +360,6 @@ export const Dashboard = () => {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     }
   };
-
 
   return (
     <>
