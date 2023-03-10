@@ -315,6 +315,44 @@ export const Dashboard = () => {
       }
     },
   };
+  const LineChart = {
+    chart: {
+      type: 'line',
+      toolbar: {
+        show: true,
+        tools: {
+          download: true,
+          selection: true,
+          zoom: true,
+          zoomin: true,
+          zoomout: true,
+          pan: false,
+        },
+      },
+    },
+    stroke: {
+      width: 3,
+      curve: 'smooth'
+    },
+    colors: ['#ff0000','#eb6363', '#f13e3e'],
+    series: [
+      {
+        name: 'Insurance A',
+        data: [30, 40, 45, 50, 49, 60, 70, 91, 125, 150, 200, 190]
+      },
+      {
+        name: 'Insurance B',
+        data: [90, 90, 80, 104, 53, 60, 80, 61, 125, 150, 200, 120]
+      },
+      {
+        name: 'Insurance C',
+        data: [200, 190, 45, 104, 53, 40, 45, 61, 125, 150,  60, 70]
+      }
+    ],
+    xaxis: {
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    }
+  };
 
 
   return (
@@ -465,7 +503,19 @@ export const Dashboard = () => {
                       <ReactApexChart options={areaChart3} series={areaChart3.series} type="area" height={255} />
                     </div>
                   </div>
-               
+                  <div className="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 ">
+                    <div className="card">
+                      <div className="card-body">
+                        <div className="chart">
+                          <div className="chartHeading">
+                            <p>Insurance</p>
+                            <small>Yearly</small>
+                          </div>
+                        </div>
+                      </div>
+                      <ReactApexChart options={LineChart} series={LineChart.series} type="line" height={350} />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
